@@ -71,7 +71,7 @@ def copy_views(tar_path, name):
     if not path.exists(path.dirname(target_view)):
         makedirs(path.dirname(target_view))
 
-    call(["cp", "-rf", source_view, target_view])
+    call(["cp", "-f", source_view, target_view])
     print('Copied ' + source_view + ' to ' + target_view)
 
 

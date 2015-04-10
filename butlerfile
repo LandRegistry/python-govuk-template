@@ -1,2 +1,2 @@
-clean: rm -rf assets; rm -rf zip;
+clean: rm -rf assets; rm -rf zip; rm -rf views;
 run: python run.py
