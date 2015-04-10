@@ -84,5 +84,3 @@ def copy_assets(tar_path):
     call(["cp", "-rf", unzipped_path + "/assets", assets_path])
 
     print('Copied ' + unzipped_path + '/assets to ' + assets_path)
-
-download_mustache()

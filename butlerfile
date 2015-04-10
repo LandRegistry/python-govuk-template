@@ -1,1 +1,2 @@
 clean: rm -rf assets; rm -rf zip;
+run: python run.py
