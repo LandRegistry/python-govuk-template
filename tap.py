@@ -38,5 +38,3 @@ def download_mustache():
     release = latest_release()
     mustache = mustache_asset(release)
     download(mustache)
-
-download_mustache()
