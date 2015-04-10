@@ -8,6 +8,6 @@ def thisDir():
     return path.dirname(path.realpath(__file__))
 
 loader = unittest.TestLoader()
-tests = loader.discover(thisDir(), pattern="test_*.py")
+tests = loader.discover('.', pattern="test_*.py")
 runner = ColourTextTestRunner()
 runner.run(tests)
