@@ -1,4 +1,5 @@
 import requests
+from os import path, makedirs
 
 
 def latest_release():
@@ -20,8 +21,10 @@ def mustache_asset(release):
 
 
 def download(asset):
-    local_filename = asset['name']
+    local_filename = './zip/' + asset['name']
     response = requests.get(asset['browser_download_url'], stream=True)
+    if not path.exists(path.dirname(local_filename)):
+        makedirs(path.dirname(local_filename))
     with open(local_filename, 'wb') as f:
         for chunk in response.iter_content(chunk_size=1024):
             if chunk:  # filter out keep-alive new chunks
@@ -35,3 +38,5 @@ def download_mustache():
     release = latest_release()
     mustache = mustache_asset(release)
     download(mustache)
+
+download_mustache()
