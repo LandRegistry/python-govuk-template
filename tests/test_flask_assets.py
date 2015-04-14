@@ -3,7 +3,7 @@ from flask import Flask
 from govuk_template.flask import assets
 
 
-class TestFlaskMustache(unittest.TestCase):
+class TestFlaskAssets(unittest.TestCase):
 
     def setUp(self):
         self.app = Flask('testCase')
@@ -11,10 +11,9 @@ class TestFlaskMustache(unittest.TestCase):
 
         self.app.config['TESTING'] = True
 
-
     def test_blueprint(self):
         with self.app.test_client() as client:
             res = client.get('/assets/stylesheets/govuk-template.css')
 
             self.assertEqual(res.status_code, 200)
-            self.assertTrue ("text/css" in res.headers['Content-Type'])
+            self.assertTrue("text/css" in res.headers['Content-Type'])
