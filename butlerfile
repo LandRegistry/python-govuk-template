@@ -1,2 +1,3 @@
 clean: rm -rf assets; rm -rf zip; rm -rf views;
 run: python run.py
+install: pip install -r requirements.txt
