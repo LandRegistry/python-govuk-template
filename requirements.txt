@@ -1,3 +1,5 @@
 requests
 colour-runner
 flask
+lxml
+flask_stache
