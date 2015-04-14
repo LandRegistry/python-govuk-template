@@ -64,7 +64,7 @@ def unzip(tar_path):
 def copy_views(tar_path, name):
     unzipped_path = unzip_path(tar_path)
     source_view = unzipped_path + '/views/layouts/govuk_template.html'
-    target_view = thisDir() + '/views/' + name + '/govuk_template.mustache'
+    target_view = thisDir() + '/govuk_template/flask/' + name + '/govuk_template.mustache'
 
     if not path.exists(unzipped_path):
         unzip(tar_path)
