@@ -8,7 +8,7 @@ def thisDir():
 
 class GovukTemplate(object):
 
-    def render(self, **context):
+    def render(self, *context, **kwargs):
         renderer = Renderer(search_dirs=[thisDir()])
         template = renderer.load_template('govuk_template')
-        return renderer.render(template, **context)
+        return renderer.render(template, *context, **kwargs)
