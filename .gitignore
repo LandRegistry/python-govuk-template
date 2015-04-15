@@ -1,9 +1,9 @@
 __pycache__
 *.pyc
-zip/
-assets
-views
+/zip/
+/assets
+/views
 
-build
-dist
+/build
+/dist
 *.egg-info
