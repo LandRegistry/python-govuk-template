@@ -3,3 +3,7 @@ __pycache__
 zip/
 assets
 views
+
+build
+dist
+*.egg-info

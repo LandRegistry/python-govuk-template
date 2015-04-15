@@ -3,3 +3,5 @@ colour-runner
 flask
 lxml
 pystache
+wheel
+setuptools
