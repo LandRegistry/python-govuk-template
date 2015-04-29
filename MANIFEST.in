@@ -1,1 +1,2 @@
 recursive-include assets *
+include README.md
