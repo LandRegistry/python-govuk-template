@@ -1,2 +1,2 @@
-recursive-include assets *
+recursive-include flask *
 include README.md
