@@ -8,7 +8,7 @@ def read(*paths):
 
 setup(
     name='govuk-template',
-    version='0.1.3',
+    version='0.1.4',
     description='The GOV.UK template for python',
     url='https://github.com/LandRegistry/python-govuk-template',
     license='MIT',
@@ -18,6 +18,7 @@ setup(
         'govuk_template.flask.assets',
         'govuk_template.flask.mustache'
     ],
+    package_data={'govuk_template.flask.mustache':['*'],},
     include_package_data=True,
     classifiers=[
         'Development Status :: 1 - Planning',
