@@ -5,3 +5,4 @@ lxml
 pystache
 wheel
 setuptools
+xmlrunner
