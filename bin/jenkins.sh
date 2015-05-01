@@ -1,6 +1,8 @@
+env_dir="~/.virtualenv/${JOB_NAME/ /_}"
+
 #create and activate a virtualenv
-virtualenv .env
-. .env/bin/activate
+virtualenv --clear $env_dir
+. $env_dir/bin/activate
 
 #install requirements
 pip install -r requirements.txt
