@@ -1,6 +1,11 @@
 #! /usr/bin/env bash
 
-env_dir="$HOME/.virtualenv/${JOB_NAME/ /_}"
+echo "$HOME"
+echo "$USER"
+echo "$JENKINS_HOME"
+echo "$WORKSPACE"
+
+env_dir="$HOME/.virtualenv/${JOB_NAME// /_}"
 
 #create and activate a virtualenv
 virtualenv --clear $env_dir
