@@ -14,6 +14,4 @@ python tests.py --xml
 
 test_result=$?
 
-echo "test_result = $test_result"
-
 exit $test_result
