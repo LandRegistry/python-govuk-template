@@ -17,4 +17,10 @@ runner = ColourTextTestRunner()
 if '--xml' in sys.argv:
     runner = XMLTestRunner(output='test-reports')
 
-runner.run(tests)
+test_result = runner.run(tests)
+
+if test_result.wasSuccessful():
+    sys.exit()
+else:
+    number_failed = len(test_result.failures)
+    sys.exit(number_failed)
