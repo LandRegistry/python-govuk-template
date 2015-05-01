@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
-env_dir="~/.virtualenv/${JOB_NAME/ /_}"
+
+env_dir="$HOME/.virtualenv/${JOB_NAME/ /_}"
 
 #create and activate a virtualenv
 virtualenv --clear $env_dir
