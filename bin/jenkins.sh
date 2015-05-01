@@ -14,7 +14,4 @@ python tests.py --xml
 
 test_result=$?
 
-#deactivate virtualenv
-deactivate
-
 exit $test_result
