@@ -17,4 +17,4 @@ python tests.py --xml
 
 test_pass=$?
 
-exit $test_result
+exit $test_pass
