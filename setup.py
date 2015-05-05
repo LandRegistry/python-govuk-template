@@ -16,7 +16,7 @@ setup(
     author='Ramin Vazir <ramin.vazir@digital.landregistry.gov.uk>,\
             Michael Allen <michael@michaelallen.io>',
     packages=[
-        'govuk_template'
+        'govuk_template',
         'govuk_template.flask.assets',
         'govuk_template.flask.mustache'
     ],
