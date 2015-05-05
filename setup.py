@@ -1,8 +1,6 @@
 import os
 from setuptools import setup
-
-
-build_number = os.getenv('BUILD_NUMBER', '0')
+from govuk_template import VERSION
 
 
 def read(*paths):
@@ -11,13 +9,14 @@ def read(*paths):
 
 setup(
     name='govuk-template',
-    version='0.1.{}'.format(build_number),
+    version='0.1.{}'.format(VERSION.build_number),
     description='The GOV.UK template for python',
     url='https://github.com/LandRegistry/python-govuk-template',
     license='MIT',
     author='Ramin Vazir <ramin.vazir@digital.landregistry.gov.uk>,\
             Michael Allen <michael@michaelallen.io>',
     packages=[
+        'govuk_template.VERSION'
         'govuk_template.flask.assets',
         'govuk_template.flask.mustache'
     ],
