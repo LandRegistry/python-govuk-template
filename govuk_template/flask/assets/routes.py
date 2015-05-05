@@ -3,7 +3,7 @@ from os import path
 
 
 __dot = path.dirname(path.realpath(__file__))
-__asset_dir = path.join(__dot, '../../../assets')
+__asset_dir = path.join(__dot, '../../assets')
 
 
 def register_routes(blueprint):

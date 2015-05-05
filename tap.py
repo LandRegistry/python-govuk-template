@@ -77,7 +77,7 @@ def copy_views(tar_path, name):
 
 def copy_assets(tar_path):
     unzipped_path = unzip_path(tar_path)
-    assets_path = thisDir()
+    assets_path = path.join(thisDir(), 'govuk_template')
 
     if not path.exists(unzipped_path):
         unzip(tar_path)
