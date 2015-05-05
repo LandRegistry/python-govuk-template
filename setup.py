@@ -9,7 +9,7 @@ def read(*paths):
 
 setup(
     name='govuk-template',
-    version='0.1.{}'.format(VERSION.build_number),
+    version='0.2.{}'.format(VERSION.build_number),
     description='The GOV.UK template for python',
     url='https://github.com/LandRegistry/python-govuk-template',
     license='MIT',
