@@ -9,6 +9,9 @@ virtualenv $env_dir
 #install requirements
 pip install -r requirements.txt
 
+#install the govuk_template files
+python run.py
+
 #run tests
 python tests.py --xml
 
