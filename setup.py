@@ -2,13 +2,16 @@ import os
 from setuptools import setup
 
 
+build_number = os.getenv('BUILD_NUMBER', '0')
+
+
 def read(*paths):
     with open(os.path.join(*paths), 'r') as f:
         return f.read()
 
 setup(
     name='govuk-template',
-    version='0.1.6',
+    version='0.1.{}'.format(build_number),
     description='The GOV.UK template for python',
     url='https://github.com/LandRegistry/python-govuk-template',
     license='MIT',

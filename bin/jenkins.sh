@@ -17,8 +17,4 @@ python tests.py --xml
 
 test_pass=$?
 
-if [ $test_pass ]; then
-  HOME=$JENKINS_HOME python setup.py sdist upload -r pypi
-fi
-
 exit $test_result
