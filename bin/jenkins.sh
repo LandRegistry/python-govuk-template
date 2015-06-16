@@ -15,6 +15,10 @@ python run.py
 #run tests
 python tests.py --xml
 
-test_pass=$?
+flake8 .
 
-exit $test_pass
+python_linting=$?
+
+e_code=$((test_pass + python_linting))
+
+exit $e_code
