@@ -6,3 +6,4 @@ pystache
 wheel
 setuptools
 xmlrunner
+flake8
