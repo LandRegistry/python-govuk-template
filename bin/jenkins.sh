@@ -15,6 +15,8 @@ python run.py
 #run tests
 python tests.py --xml
 
+test_pass=$?
+
 flake8 .
 
 python_linting=$?
